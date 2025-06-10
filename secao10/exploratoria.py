@@ -2,6 +2,13 @@ import pandas as pd
 import seaborn as sns
 import statistics as sts
 import matplotlib.pyplot as plt
+import os
+
+# Obtém o caminho absoluto do script
+diretorio_script = os.path.dirname(os.path.abspath(__file__))
+
+# Ir para diretório do script
+os.chdir(diretorio_script)
 
 dataset = pd.read_csv(r'../Formacao_CD/10.Limpeza e tratamento de Dados - Prática em Python/Churn.csv', sep=';')
 
@@ -30,4 +37,4 @@ agrupado.plot.bar(color = 'gray')
 plt.show()
 
 print('Describe')
-print(dataset['Score']).describe()
+print(dataset['Score'].describe())

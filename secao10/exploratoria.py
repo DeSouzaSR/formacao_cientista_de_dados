@@ -3,7 +3,7 @@ import seaborn as sns
 import statistics as sts
 import matplotlib.pyplot as plt
 
-dataset = pd.read_csv(r'data\raw\Churn.csv', sep=";")
+dataset = pd.read_csv(r'..\data\raw\Churn.csv', sep=";")
 
 
 print('\nVisualização')
@@ -36,6 +36,8 @@ print(dataset['Score'].describe())
 
 # Boxplot para Score
 sns.boxplot(dataset['Score']).set_title("Score")
+plt.show()
 
 # Gráfico de densidade
 sns.histplot(dataset['Score'], kde=True)
+plt.show()

@@ -41,3 +41,28 @@ plt.show()
 # Gráfico de densidade
 sns.histplot(dataset['Score'], kde=True)
 plt.show()
+
+#----Idade----
+dataset['Idade'].describe()
+
+# Boxplot
+sns.boxplot(dataset['Idade']).set_title("Idade")
+plt.show()
+
+# Gráfico de densidade
+sns.histplot(dataset['Idade'], kde=True)
+plt.show()
+
+#----Salário----
+dataset['Salario'].describe()
+
+# Boxplot
+sns.boxplot(dataset['Salario']).set_title("Salario")
+plt.show()
+
+# Gráfico de densidade
+sns.histplot(dataset['Salario'], kde=True)
+plt.show()
+
+# Nulos
+dataset.isnull().sum()

@@ -3,7 +3,8 @@ import seaborn as sns
 import statistics as sts
 import matplotlib.pyplot as plt
 
-dataset = pd.read_csv(r'../Formacao_CD/10.Limpeza e tratamento de Dados - Prática em Python/Churn.csv', sep=';')
+dataset = pd.read_csv(r'data\raw\Churn.csv', sep=";")
+
 
 print('\nVisualização')
 print(dataset.head())
@@ -29,5 +30,12 @@ print(agrupado)
 agrupado.plot.bar(color = 'gray')
 plt.show()
 
+# Colunas numéricas
 print('Describe')
 print(dataset['Score'].describe())
+
+# Boxplot para Score
+sns.boxplot(dataset['Score']).set_title("Score")
+
+# Gráfico de densidade
+sns.histplot(dataset['Score'], kde=True)

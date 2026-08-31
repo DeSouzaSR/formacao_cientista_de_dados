@@ -41,3 +41,4 @@ hist(dados$Saldo)
 summary(dados$Salario)
 boxplot(dados$Salario)
 hist(dados$Salario)
+

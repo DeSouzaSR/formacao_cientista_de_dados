@@ -45,3 +45,14 @@ dados[is.na(dados$idade),]
 # Substituindo valores pela mediana da idade
 dados[dados$Idade<0 | dados$Idade> 110,]$Idade <- median(dados$Idade, na.rm = T)
 summary(dados$Idade)
+
+
+# Dados duplicados --------------------------------------------------------
+
+# Buscar duplicados pelo ID
+# Há uma função duplicated que verifica isso
+x <- dados[duplicated(dados$Id),]
+# o id 81 tem duas linhas exatamente iguais. Remover pelo identificador
+dados = dados[-c(82),] # apaga a linha 82
+
+

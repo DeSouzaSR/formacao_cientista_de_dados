@@ -1,4 +1,4 @@
-# Ambiente virtual
+# Ambiente virtual Python
 .venv/
 env/
 venv/
@@ -8,14 +8,22 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Jupyter e VS Code
-.ipynb_checkpoints
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
 .vscode/
 
+# Arquivos do R/RStudio
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
 # Dados locais e arquivos de saída
-#data/raw/
-#data/processed/
-#output/
+# data/raw/
+# data/processed/
+# output/
 *.fits
 *.csv
 *.h5

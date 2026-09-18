@@ -77,4 +77,3 @@ dados[duplicated(dados$Id),]
 # **** Solução ****
 # Remover a segunda linha duplicada, pelo campo id
 dados <- dados[-c(82),]
-

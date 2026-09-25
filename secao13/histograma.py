@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 # Leitura dos dados
-base = pd.read_csv('data/raw/trees.csv')
+base = pd.read_csv('data/raw/dados.csv')
 
 # Criação do histograma
 h = np.histogram(base.iloc[:,1], bins=6)

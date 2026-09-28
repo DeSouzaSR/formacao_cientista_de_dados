@@ -2,8 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-# Leitura dos dados
-base = pd.read_csv('data/raw/dados.csv')
+base = pd.read_csv("data/raw/trees.csv", sep=',')
 
 # Criação do histograma
 h = np.histogram(base.iloc[:,1], bins=6)
@@ -12,7 +11,7 @@ h = np.histogram(base.iloc[:,1], bins=6)
 
 # Visualização
 plt.figure()
-plt.hist(base.iloc[:,1], bins=6)
+plt.hist(base.iloc[:,1], bins=10)
 plt.title('Árvores')
 plt.ylabel("Frequência")
 plt.xlabel('Altura')

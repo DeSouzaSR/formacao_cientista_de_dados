@@ -11,7 +11,7 @@ h = np.histogram(base.iloc[:,1], bins=6)
 
 # Visualização
 plt.figure()
-plt.hist(base.iloc[:,1], bins=10)
+plt.hist(base.iloc[:,1], bins=6)
 plt.title('Árvores')
 plt.ylabel("Frequência")
 plt.xlabel('Altura')

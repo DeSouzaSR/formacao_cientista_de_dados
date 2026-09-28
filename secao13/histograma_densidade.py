@@ -1,12 +1,14 @@
 from matplotlib.pyplot import title
-from pandas import col
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
 
+
+
 # Leitura dos dados
 base = pd.read_csv('data/raw/trees.csv')
+
 
 # Visualização
 plt.figure()

@@ -20,5 +20,4 @@ amostri_iris <- iris[amostra == 1,]
 
 # Garantindo a reprodutibilidade
 set.seed(42)
-sample(c(1000), 1
-)
+sample(c(1000), 1)

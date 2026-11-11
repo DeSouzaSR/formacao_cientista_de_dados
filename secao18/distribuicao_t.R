@@ -12,6 +12,6 @@ t_0 <- n - 1
 t <- (X_barra - mu_0)/(S / sqrt(n))
 cat("Valor de t: ", t)
 
-# Cálculo da probabilidade para 80%, calca à esquerda
+# Cálculo da probabilidade para 80%, alca à esquerda
 p_80 <- pt(1.5, 8)
-cat("Probabilidade de ganhar menos de 80 por hora: ", p_80)
+cat(sprintf("Probabilidade de ganhar menos de 80/h: %.1f%%", p_80 * 100))
